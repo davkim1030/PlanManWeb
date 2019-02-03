@@ -1,3 +1,4 @@
+{% include "plan_man/header.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,19 @@
         <input type="hidden" name="object_time" value="{{ object_time }}">
         <input type="hidden" name="complete_day" value="{{ complete_day}}">
         <input type="hidden" name="start_day" value="{{ start_day }}">
-        <input type="submit" name="edit" value="Edit">
+        <input type="submit" name="edit" value="Edit"><br>
+        <input type="submit" name="work" value="Create Work" formaction="{% url 'plan_man:create_work' %}">
+    </form>
+    <form method="POST" action="{% url 'plan_man:detail_work' %}">
+        {% csrf_token %}
+        <input type="hidden" name="user_id" value="{{ user_id }}">
+        <input type="hidden" name="name" value="{{ name }}">
+        <select name="date">
+            {% for work in work_list %}
+                <option typeof="date" value="{{ work }}">{{ work }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" name="edit" value="Work Detail"><br>
     </form>
 
 

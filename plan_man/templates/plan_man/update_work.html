@@ -1,3 +1,4 @@
+{% include "plan_man/header.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +14,9 @@
         <input type="hidden" name="user_id" value="{{ user_id }}">
         <input type="hidden" name="name" value="{{ name }}">
         <input type="hidden" name="date" value="{{ date }}">
-        User ID: {{ user_id }}
-        Name: {{ name }}
-        Date: {{ date }}
+        User ID: {{ user_id }}<br>
+        Name: {{ name }}<br>
+        Date: {{ date }}<br>
         <label>
             Complete Time:
             <input type="number" name="complete_time" value="{{ complete_time }}">

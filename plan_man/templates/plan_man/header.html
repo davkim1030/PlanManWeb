@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a href="{% url 'plan_man:main' %}">Main</a><br>
+    User
+    <ul>
+        {% if request.session.user_id is not None %}
+            <li><a href="{% url 'plan_man:detail_user' %}">My Account</a></li>
+            <li><a href="{% url 'plan_man:logout' %}">Logout</a></li>
+        </ul>
+
+        Plan
+        <ul>
+            <li><a href="{% url 'plan_man:create_plan' %}">Create Plan</a></li>
+            <li><a href="{% url 'plan_man:select_plan' %}">Select Plan</a></li>
+        </ul>
+        {% endif %}
+        {% if request.session.user_id is None %}
+            <li><a href="{% url 'plan_man:create_user' %}">Sign Up</a></li>
+            <li><a href="{% url 'plan_man:login' %}">Login</a></li>
+        </ul>
+        {% endif %}
+
+
+
+</body>
+</html>

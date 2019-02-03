@@ -9,13 +9,15 @@ urlpatterns = [
     # path('plan_detail/<str:user_id>&<str:name>/', views.detail, name='detail'),
 
     # ex: 127.0.0.1/
-    path('', views.index, name='index'),
+    path('', views.main, name='main'),
+    path('login/', views.login, name='login'),
+    path('login_action/', views.login_action, name='login_action'),
+    path('logout/', views.logout, name='logout'),
 
     # views
     # ex: 127.0.0.1/create_user/
     path('sign_up/', views.create_user, name='create_user'),
     path('detail_user/', views.detail_user, name='detail_user'),
-    path('select_user/', views.select_user, name='select_user'),
     path('update_user/', views.update_user, name='update_user'),
 
     path('create_plan/', views.create_plan, name='create_plan'),

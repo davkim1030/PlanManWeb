@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="{% url 'plan_man:login_action' %}" method="POST">
+        {% csrf_token %}
+        <label>
+            ID:
+            <input type="text" name="user_id">
+        </label><br>
+        <label>
+            PW:
+            <input type="password" name="password">
+        </label><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

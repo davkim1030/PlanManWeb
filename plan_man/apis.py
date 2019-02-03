@@ -18,8 +18,7 @@ def user_create(request):
 @csrf_exempt
 def user_read(request):
     data = json.loads(request_bytes_to_json(request))
-    print(data)
-    if request.method == 'POST' and User().is_exist(data['user_id']):
+    if User().is_exist(data['user_id']) and request.method == 'POST':
         user = User()
         user_data = user.read(data['user_id'])
         return JsonResponse({"Result": True,
@@ -45,6 +44,7 @@ def user_delete(request):
     if request.method == 'POST' and User().is_exist(data['user_id']):
         user = User()
         user.dele(data['user_id'])
+        del request.session['user_id']
         return JsonResponse({"Result": True})
     return JsonResponse({"Result": False})
 
@@ -75,6 +75,23 @@ def plan_read(request):
     if request.method == 'POST' and Plan().is_exist(data['user_id'], data['name']):
         plan = Plan()
         plan_data = plan.read(data['user_id'], data['name'])
+        return JsonResponse({"Result": True,
+                             "user_id": plan_data.user_id.user_id,
+                             "name": plan_data.name,
+                             "iteration_type": plan_data.iteration_type,
+                             "frequency": plan_data.frequency,
+                             "object_time": plan_data.object_time,
+                             "complete_day": plan_data.complete_day,
+                             "start_day": plan_data.start_day})
+    return JsonResponse({"Result": False})
+
+
+@csrf_exempt
+def plan_list_read(request):
+    data = json.loads(request_bytes_to_json(request))
+    if request.method == 'POST' and User().is_exist(data['user_id']):
+        plan = Plan()
+        plan_data = plan.filter(data['user_id'])
         return JsonResponse({"Result": True,
                              "user_id": plan_data.user_id.user_id,
                              "name": plan_data.name,
@@ -132,6 +149,20 @@ def work_read(request):
                              "name": work_data.name.name,
                              "date": work_data.date,
                              "complete_time": work_data.complete_time})
+    return JsonResponse({"Result": False})
+
+
+@csrf_exempt
+def work_list_read(request):
+    data = json.loads(request_bytes_to_json(request))
+    if request.method == 'POST' and Plan().is_exist(data['user_id'], data['name']):
+        work = Work()
+        work_data = work.filter(user_id=data['user_id'], name=data['name'])
+        work_list = dict()
+        for work_i in work_data:
+            work_list[str(work_i.date)] = work_i.complete_time
+        return JsonResponse({"Result": True,
+                             'work_list': json.dumps(work_list)})
     return JsonResponse({"Result": False})
 
 

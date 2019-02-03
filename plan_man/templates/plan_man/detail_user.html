@@ -1,3 +1,4 @@
+{% include "plan_man/header.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 <body>
     <h1>Detail User</h1>
     <table border="1">
-        <tr><td>User ID</td><td>{{ user_id }}</td></tr>
+        <tr><td>User ID</td><td>{{ request.session.user_id }}</td></tr>
         <tr><td>Name</td><td>{{ name }}</td></tr>
     </table>
     <form method="POST" action="{% url 'plan_man:update_user' %}">

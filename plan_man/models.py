@@ -83,6 +83,14 @@ class Plan(models.Model):
         p = Plan.objects.get(user_id=user_id, name=name)
         p.delete()
 
+    def filter(self, user_id, name):
+        p = Plan.objects.filter(user_id=user_id, name=name)
+        return p
+
+    def filter(self, user_id):
+        p = Plan.objects.filter(user_id=user_id)
+        return p
+
     def is_exist(self, user_id, name):
         exist = True
         try:
@@ -141,6 +149,13 @@ class Work(models.Model):
                              name=plan.read(user_id=user_id, name=name),
                              date=date)
         w.delete()
+
+    def filter(self, user_id, name):
+        user = User()
+        plan = Plan()
+        w = Work.objects.filter(user_id=user.read(user_id=user_id),
+                                name=plan.read(user_id=user_id, name=name))
+        return w
 
     def is_exist(self, user_id, name, date):
         exist = True

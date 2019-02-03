@@ -1,3 +1,4 @@
+{% include "plan_man/header.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,15 @@
     <h1>Select Plan</h1>
 
     <form action="{% url 'plan_man:detail_plan' %}" method="POST" content='text/html; charset=UTF-8'>
-
         {% csrf_token %}
-        <label>
-            User ID:
-            <input type="text" name="user_id">
-        </label><br>
+        <input type="hidden" name="user_id" value="{{ request.session.user_id }}">
         <label>
             Name:
-            <input type="text" name="name">
+            <select name="name">
+                {% for plan in plan_list %}
+                    <option value="{{ plan.name }}">{{ plan.name }}</option>
+                {% endfor %}
+            </select>
         </label><br>
 
         <input type="submit">

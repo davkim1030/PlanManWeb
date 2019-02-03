@@ -1,3 +1,4 @@
+{% include "plan_man/header.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +11,8 @@
     <form action="{% url 'plan_man:create_work_api' %}" method="POST" content='text/html; charset=UTF-8'>
 
         {% csrf_token %}
-        <label>
-            User ID:
-            <input type="text" name="user_id">
-        </label><br>
-        <label>
-            Name:
-            <input type="text" name="name">
-        </label><br>
+        <input type="hidden" name="user_id" value="{{ request.session.user_id }}">
+        <input type="hidden" name="name" value="{{ name }}">
         <label>
             Date:
             <input type="date" name="date">
