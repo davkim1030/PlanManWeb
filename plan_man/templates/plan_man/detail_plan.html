@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Plan</title>
+</head>
+<body>
+    <h1>Detail Plan</h1>
+    <table border="1">
+        <tr><td>Name</td><td>{{ name }}</td></tr>
+        <tr><td>Iteration Type</td><td>{{ iteration_type }}</td></tr>
+        <tr><td>Frequency</td><td>{{ frequency }}</td></tr>
+        <tr><td>Object Time</td><td>{{ object_time }}</td></tr>
+        <tr><td>Complete Day</td><td>{{ complete_day }}</td></tr>
+        <tr><td>Start Day</td><td>{{ start_day }}</td></tr>
+    </table>
+    <form method="POST" action="{% url 'plan_man:update_plan' %}">
+        {% csrf_token %}
+        <input type="hidden" name="user_id" value="{{ user_id }}">
+        <input type="hidden" name="name" value="{{ name }}">
+        <input type="hidden" name="iteration_type" value="{{ iteration_type}}">
+        <input type="hidden" name="frequency" value="{{ frequency }}">
+        <input type="hidden" name="object_time" value="{{ object_time }}">
+        <input type="hidden" name="complete_day" value="{{ complete_day}}">
+        <input type="hidden" name="start_day" value="{{ start_day }}">
+        <input type="submit" name="edit" value="Edit">
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Plan</title>
+</head>
+<body>
+    <h1>Select Plan</h1>
+
+    <form action="{% url 'plan_man:detail_plan' %}" method="POST" content='text/html; charset=UTF-8'>
+
+        {% csrf_token %}
+        <label>
+            User ID:
+            <input type="text" name="user_id">
+        </label><br>
+        <label>
+            Name:
+            <input type="text" name="name">
+        </label><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Work</title>
+</head>
+<body>
+    <h1>Create Work</h1>
+
+    <form action="{% url 'plan_man:create_work_api' %}" method="POST" content='text/html; charset=UTF-8'>
+
+        {% csrf_token %}
+        <label>
+            User ID:
+            <input type="text" name="user_id">
+        </label><br>
+        <label>
+            Name:
+            <input type="text" name="name">
+        </label><br>
+        <label>
+            Date:
+            <input type="date" name="date">
+        </label><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,178 @@
+from django.http import HttpResponse, HttpResponseNotFound
+from django.template import loader
+
+from plan_man import apis
+from .models import *
+
+
+def index(request):
+    template = loader.get_template('plan_man/index.html')
+    return HttpResponse(template.render({}, request))
+
+
+def plan_list(request):
+    p_list = Plan.objects.all()
+    template = loader.get_template('plan_man/plan_list.html')
+    context = {
+        'plan_list': p_list
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def create_plan(request):
+    template = loader.get_template('plan_man/create_plan.html')
+    context = {
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def select_plan(request):
+    template = loader.get_template('plan_man/select_plan.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+
+def detail_plan(request):
+    template = loader.get_template('plan_man/detail_plan.html')
+    data = apis.bytes_to_dict(apis.plan_read(request).content)
+    if data['Result'] == 'false':
+        return HttpResponseNotFound("Object Does Not Exist.")
+    context = {
+        'user_id': data["user_id"],
+        'name': data["name"],
+        'iteration_type': data["iteration_type"],
+        'frequency': data["frequency"],
+        'object_time': data["object_time"],
+        'complete_day': data["complete_day"],
+        'start_day': data["start_day"]
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def update_plan(request):
+    template = loader.get_template('plan_man/update_plan.html')
+    data = apis.bytes_to_dict(apis.plan_read(request).content)
+    context = {
+        'user_id': data["user_id"],
+        'name': data["name"],
+        'iteration_type': data["iteration_type"],
+        'frequency': data["frequency"],
+        'object_time': data["object_time"],
+        'complete_day': data["complete_day"],
+        'start_day': data["start_day"]
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def create_plan_api(request):
+    return HttpResponse(apis.plan_create(request))
+
+
+def update_plan_api(request):
+    return HttpResponse(apis.plan_update(request))
+
+
+def delete_plan_api(request):
+    return HttpResponse(apis.plan_delete(request))
+
+################## user
+
+
+def create_user(request):
+    template = loader.get_template('plan_man/create_user.html')
+    return HttpResponse(template.render({}, request))
+
+
+def select_user(request):
+    template = loader.get_template('plan_man/select_user.html')
+    return HttpResponse(template.render({}, request))
+
+
+def detail_user(request):
+    template = loader.get_template('plan_man/detail_user.html')
+    data = apis.bytes_to_dict(apis.user_read(request).content)
+    if data["Result"] == 'false':
+        return HttpResponseNotFound("Object Does Not Exist.")
+    context = {
+        'user_id': data["user_id"],
+        'name': data["name"],
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def update_user(request):
+    template = loader.get_template('plan_man/update_user.html')
+    data = apis.bytes_to_dict(apis.user_read(request).content)
+    context = {
+        'user_id': data["user_id"],
+        'name': data["name"],
+        'password': data["password"]
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def create_user_api(request):
+    return HttpResponse(apis.user_create(request))
+
+
+def update_user_api(request):
+    return HttpResponse(apis.user_update(request))
+
+
+def delete_user_api(request):
+    return HttpResponse(apis.user_delete(request))
+
+
+################## work
+
+
+def create_work(request):
+    template = loader.get_template('plan_man/create_work.html')
+    return HttpResponse(template.render({}, request))
+
+
+def select_work(request):
+    template = loader.get_template('plan_man/select_work.html')
+    return HttpResponse(template.render({}, request))
+
+
+def detail_work(request):
+    template = loader.get_template('plan_man/detail_work.html')
+    data = apis.bytes_to_dict(apis.work_read(request).content)
+    if data["Result"] == 'false':
+        return HttpResponseNotFound("Object Does Not Exist.")
+    context = {
+        'user_id': data["user_id"],
+        'name': data["name"],
+        'date': data["date"],
+        'complete_time': data["complete_time"],
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def update_work(request):
+    template = loader.get_template('plan_man/update_work.html')
+    data = apis.bytes_to_dict(apis.work_read(request).content)
+    context = {
+        'user_id': data["user_id"],
+        'name': data["name"],
+        'date': data["date"],
+        'complete_time': data["complete_time"],
+    }
+    return HttpResponse(template.render(context, request))
+
+
+def create_work_api(request):
+    return HttpResponse(apis.work_create(request))
+
+
+def read_work_api(request):
+    return HttpResponse(apis.work_read(request))
+
+
+def update_work_api(request):
+    return HttpResponse(apis.work_update(request))
+
+
+def delete_work_api(request):
+    return HttpResponse(apis.work_delete(request))

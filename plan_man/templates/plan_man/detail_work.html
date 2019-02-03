@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Work</title>
+</head>
+<body>
+    <h1>Detail Work</h1>
+    <table border="1">
+        <tr><td>User ID</td><td>{{ user_id }}</td></tr>
+        <tr><td>Name</td><td>{{ name }}</td></tr>
+        <tr><td>Date</td><td>{{ date }}</td></tr>
+        <tr><td>Complete Time</td><td>{{ complete_time }}</td></tr>
+    </table>
+    <form method="POST" action="{% url 'plan_man:update_work' %}">
+        {% csrf_token %}
+        <input type="hidden" name="user_id" value="{{ user_id }}">
+        <input type="hidden" name="name" value="{{ name }}">
+        <input type="hidden" name="date" value="{{ date }}">
+        <input type="submit" name="edit" value="Edit">
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Index</h1>
+
+    User
+    <ul>
+        <li><a href="{% url 'plan_man:create_user' %}">Sign Up</a></li>
+        <li><a href="{% url 'plan_man:select_user' %}">Select User</a></li>
+    </ul>
+
+    Plan
+    <ul>
+        <li><a href="{% url 'plan_man:create_plan' %}">Create Plan</a></li>
+        <li><a href="{% url 'plan_man:select_plan' %}">Select Plan</a></li>
+    </ul>
+
+    Work<br>
+    <ul>
+        <li><a href="{% url 'plan_man:create_work' %}">Create Work</a></li>
+        <li><a href="{% url 'plan_man:select_work' %}">Select Work</a></li>
+    </ul>
+
+</body>
+</html>

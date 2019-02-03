@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update & Delete Plan</title>
+</head>
+<body>
+    <h1>Update & Delete Plan</h1>
+
+    <form method="POST" content='text/html; charset=UTF-8'>
+
+        {% csrf_token %}
+        <input type="hidden" name="user_id" value="{{ user_id }}">
+        <input type="hidden" name="prev_name" value="{{ name }}">
+        <label>
+            Name:
+            <input type="text" name="name" value="{{ name }}">
+        </label><br>
+
+        Iteration Type:
+        <input type="radio" name="iteration_type" id="daily" value="0"
+            {% if iteration_type == "0" %} checked {% endif %}>
+        <label for="daily">Daily</label>
+        <input type="radio" name="iteration_type" id="weekly" value="1"
+            {% if iteration_type == "1" %} checked {% endif %}>
+        <label for="weekly">Weekly</label>
+        <input type="radio" name="iteration_type" id="monthly" value="2"
+            {% if iteration_type == "2" %} checked {% endif %}>
+        <label for="monthly">Monthly</label><br>
+
+        <label>
+            Frequency:
+            <input type="text" name="frequency" value="{{ frequency }}">
+        </label><br>
+        <label>
+            Object Time:
+            <input type="number" name="object_time" value="{{ object_time }}">
+        </label><br>
+        <label>
+            Complete Day:
+            <input type="number" name="complete_day" value="{{ complete_day }}">
+        </label><br>
+        Start Day: {{ start_day }}<br>
+        <input type="submit" value="Update" formaction="{% url 'plan_man:update_plan_api' %}" ><br>
+        <input type="submit" value="Delete" formaction="{% url 'plan_man:delete_plan_api' %}" >
+    </form>
+</body>
+</html>

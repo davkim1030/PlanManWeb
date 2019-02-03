@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plan List</title>
+</head>
+<body>
+    {% if plan_list %}
+        <ul>
+        {% for plan in plan_list %}
+            <li><a href="{% url 'plan_man:detail_plan' %}">
+                {{ plan.user_id }}.{{ plan.name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+</body>
+</html>

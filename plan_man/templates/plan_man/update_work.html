@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update & Delete Work</title>
+</head>
+<body>
+    <h1>Update & Delete Work</h1>
+
+    <form method="POST" content='text/html; charset=UTF-8'>
+
+        {% csrf_token %}
+        <input type="hidden" name="user_id" value="{{ user_id }}">
+        <input type="hidden" name="name" value="{{ name }}">
+        <input type="hidden" name="date" value="{{ date }}">
+        User ID: {{ user_id }}
+        Name: {{ name }}
+        Date: {{ date }}
+        <label>
+            Complete Time:
+            <input type="number" name="complete_time" value="{{ complete_time }}">
+        </label><br>
+
+        <input type="submit" value="Update" formaction="{% url 'plan_man:update_work_api' %}" ><br>
+        <input type="submit" value="Delete" formaction="{% url 'plan_man:delete_work_api' %}" >
+    </form>
+</body>
+</html>
