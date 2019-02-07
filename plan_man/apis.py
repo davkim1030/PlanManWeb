@@ -50,6 +50,14 @@ def user_delete(request):
 
 
 @csrf_exempt
+def user_exist(request):
+    data = json.loads(request_bytes_to_json(request))
+    if request.method == 'POST' and User().is_exist(data['user_id']):
+        return JsonResponse({"Result": True})
+    return JsonResponse({"Result": False})
+
+
+@csrf_exempt
 def plan_create(request):
     if request.method == 'POST':
         data = json.loads(request_bytes_to_json(request))
@@ -125,6 +133,14 @@ def plan_delete(request):
 
 
 @csrf_exempt
+def plan_exist(request):
+    data = json.loads(request_bytes_to_json(request))
+    if request.method == 'POST' and Plan().is_exist(data['user_id'], data['name']):
+        return JsonResponse({"Result": True})
+    return JsonResponse({"Result": False})
+
+
+@csrf_exempt
 def work_create(request):
     if request.method == 'POST':
         data = json.loads(request_bytes_to_json(request))
@@ -185,6 +201,14 @@ def work_delete(request):
     if request.method == 'POST' and Work().is_exist(data['user_id'], data['name'], data['date']):
         work = Work()
         work.dele(data['user_id'], data['name'], data['date'])
+        return JsonResponse({"Result": True})
+    return JsonResponse({"Result": False})
+
+
+@csrf_exempt
+def work_exist(request):
+    data = json.loads(request_bytes_to_json(request))
+    if request.method == 'POST' and Work().is_exist(data['user_id'], data['name'], data['date']):
         return JsonResponse({"Result": True})
     return JsonResponse({"Result": False})
 

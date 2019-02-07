@@ -36,14 +36,17 @@ urlpatterns = [
     path('api/user/read/', apis.user_read, name='read_user_api'),
     path('api/user/update/', apis.user_update, name='update_user_api'),
     path('api/user/delete/', apis.user_delete, name='delete_user_api'),
+    path('api/user/exist/', apis.user_exist, name='exist_user_api'),
 
     path('api/plan/create/', apis.plan_create, name='create_plan_api'),
     path('api/plan/read/', apis.plan_read, name='read_plan_api'),
     path('api/plan/update/', apis.plan_update, name='update_plan_api'),
     path('api/plan/delete/', apis.plan_delete, name='delete_plan_api'),
+    path('api/plan/exist/', apis.plan_exist, name='exist_plan_api'),
 
     path('api/work/create/', apis.work_create, name='create_work_api'),
     path('api/work/read/', apis.work_read, name='read_work_api'),
     path('api/work/update/', apis.work_update, name='update_work_api'),
     path('api/work/delete/', apis.work_delete, name='delete_work_api'),
+    path('api/work/exist/', apis.work_exist, name='exist_work_api'),
 ]

@@ -54,7 +54,6 @@ def select_user(request):
     template = loader.get_template('plan_man/select_user.html')
     return HttpResponse(template.render({}, request))
 
-
 def detail_user(request):
     template = loader.get_template('plan_man/detail_user.html')
     data = User.objects.get(user_id=request.session['user_id'])
