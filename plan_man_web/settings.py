@@ -119,3 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = "/home/phirered2015/plan_man_web/static"
+# or, eg,
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
