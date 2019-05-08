@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0455f491-0158-447e-bfed-0a1b7945a51b" name="Default Changelist" comment="" />
+    <list default="true" id="0455f491-0158-447e-bfed-0a1b7945a51b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan_man/apis.py" beforeDir="false" afterPath="$PROJECT_DIR$/plan_man/apis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan_man/templates/plan_man/plan_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/plan_man/templates/plan_man/plan_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan_man/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/plan_man/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan_man/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/plan_man/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,114 +43,15 @@
     <favorites_list name="plan_man_web" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plan_man_web/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plan_man/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1176">
-              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plan_man/apis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1016">
-              <caret line="208" column="24" selection-start-line="208" selection-start-column="24" selection-end-line="208" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#186#405#0" />
-                <element signature="e#449#899#0" />
-                <element signature="e#945#1244#0" />
-                <element signature="e#1642#1970#0" />
-                <element signature="e#1640#2190#0" />
-                <element signature="e#2234#2994#0" />
-                <element signature="e#3043#3777#0" />
-                <element signature="e#3823#4243#0" />
-                <element signature="e#4289#4587#0" />
-                <element signature="e#4886#5094#0" />
-                <element signature="e#4633#5035#0" />
-                <element signature="e#5079#5661#0" />
-                <element signature="e#5710#6218#0" />
-                <element signature="e#6264#6702#0" />
-                <element signature="e#6748#7069#0" />
-                <element signature="e#7634#7856#0" />
-                <element signature="e#7410#7970#0" />
-                <element signature="e#8006#8259#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plan_man/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plan_man/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="-240">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/detail_user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/select_work.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -153,22 +61,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>completeTime</find>
-      <find>json.loads(request.body.decode(&quot;UTF-8&quot;))</find>
-      <find>s</find>
-      <find>is</find>
       <find>user</find>
       <find>Work</find>
       <find>User</find>
       <find>submit</find>
-      <find>plan</find>
       <find>_read</find>
       <find>user_update</find>
       <find>read_</find>
@@ -179,9 +82,7 @@
       <find>detail</find>
       <find>print</find>
       <find>create_work</find>
-      <find>create</find>
       <find>detail_pl</find>
-      <find>plan_list</find>
       <find>work_list</find>
       <find>detail_plan</find>
       <find>datetime</find>
@@ -190,6 +91,13 @@
       <find>logout</find>
       <find>django</find>
       <find>Allow</find>
+      <find>is_exit</find>
+      <find>create</find>
+      <find>plan_man</find>
+      <find>plan</find>
+      <find>plan_read</find>
+      <find>loader.get</find>
+      <find>plan_list</find>
     </findStrings>
     <replaceStrings>
       <replace>iteration_type</replace>
@@ -210,6 +118,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -224,7 +133,6 @@
         <option value="$PROJECT_DIR$/ML/out2_poly_reg.py" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/create_update_plan.html" />
         <option value="$PROJECT_DIR$/ML/ttt.py" />
-        <option value="$PROJECT_DIR$/plan_man/models.py" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/index.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/main.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/login.html" />
@@ -233,7 +141,6 @@
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/create_work.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/detail_plan.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/detail_work.html" />
-        <option value="$PROJECT_DIR$/plan_man/templates/plan_man/plan_list.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/select_plan.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/select_user.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/select_work.html" />
@@ -241,17 +148,20 @@
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/update_user.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/update_work.html" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/header.html" />
-        <option value="$PROJECT_DIR$/plan_man_web/settings.py" />
-        <option value="$PROJECT_DIR$/plan_man/views.py" />
         <option value="$PROJECT_DIR$/ML/load_model.py" />
         <option value="$PROJECT_DIR$/plan_man/templates/plan_man/detail_user.html" />
+        <option value="$PROJECT_DIR$/plan_man/models.py" />
+        <option value="$PROJECT_DIR$/plan_man_web/settings.py" />
+        <option value="$PROJECT_DIR$/ML/dataPreprocess.py" />
+        <option value="$PROJECT_DIR$/plan_man/templates/plan_man/plan_list.html" />
         <option value="$PROJECT_DIR$/plan_man/urls.py" />
         <option value="$PROJECT_DIR$/plan_man/apis.py" />
+        <option value="$PROJECT_DIR$/plan_man/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+    <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -261,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,18 +182,7 @@
             <path>
               <item name="plan_man_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="plan_man_web" type="462c0819:PsiDirectoryNode" />
-              <item name="ML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plan_man_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plan_man_web" type="462c0819:PsiDirectoryNode" />
               <item name="plan_man" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plan_man_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plan_man_web" type="462c0819:PsiDirectoryNode" />
-              <item name="plan_man" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="plan_man_web" type="b2602c69:ProjectViewProjectNode" />
@@ -293,13 +193,19 @@
             <path>
               <item name="plan_man_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="plan_man_web" type="462c0819:PsiDirectoryNode" />
+              <item name="plan_man" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="plan_man" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plan_man_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plan_man_web" type="462c0819:PsiDirectoryNode" />
               <item name="plan_man_web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.plan_man_web">
+  <component name="RunManager" selected="Python.dataPreprocess">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="plan_man_web" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -337,6 +243,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dataPreprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="plan_man_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/dataPreprocess.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -460,12 +385,14 @@
     <list>
       <item itemvalue="Django server.plan_man_web" />
       <item itemvalue="Python.out2_poly_reg" />
+      <item itemvalue="Python.dataPreprocess" />
       <item itemvalue="Python.load_model" />
       <item itemvalue="Python.make_dummy_data" />
       <item itemvalue="Python.out1_poly_reg" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dataPreprocess" />
         <item itemvalue="Python.load_model" />
         <item itemvalue="Python.out1_poly_reg" />
         <item itemvalue="Python.make_dummy_data" />
@@ -492,7 +419,14 @@
       <workItem from="1549284502815" duration="2199000" />
       <workItem from="1549536823413" duration="488000" />
       <workItem from="1549537363726" duration="1247000" />
-      <workItem from="1549560575477" duration="2271000" />
+      <workItem from="1549560575477" duration="3872000" />
+      <workItem from="1551920042157" duration="1210000" />
+      <workItem from="1551922336684" duration="20000" />
+      <workItem from="1554338799261" duration="2417000" />
+      <workItem from="1555551797947" duration="2554000" />
+      <workItem from="1556532051595" duration="927000" />
+      <workItem from="1556631815770" duration="843000" />
+      <workItem from="1557263574565" duration="5336000" />
     </task>
     <task id="LOCAL-00001" summary="view, template update">
       <created>1549232412139</created>
@@ -515,11 +449,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549561934075</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="minor workspace commit">
+      <created>1549562921473</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1549562921473</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85528000" />
+    <option name="totallyTimeSpent" value="100436000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,10 +473,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49684212" visible="true" weight="0.11342282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957806" visible="true" weight="0.15771812" />
       <window_info id="Structure" order="1" sideWeight="0.5031579" side_tool="true" weight="0.10536913" />
-      <window_info id="Favorites" order="2" sideWeight="0.50141644" side_tool="true" weight="0.09798658" />
+      <window_info id="Favorites" order="2" sideWeight="0.5042194" side_tool="true" weight="0.15771812" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32340425" />
@@ -544,9 +486,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32765958" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32765958" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -585,12 +527,27 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="view, template update" />
     <MESSAGE value="allow every host" />
     <MESSAGE value="added is_exist apis for each models" />
-    <option name="LAST_COMMIT_MESSAGE" value="added is_exist apis for each models" />
+    <MESSAGE value="minor workspace commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor workspace commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -604,38 +561,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plan_man/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/djangogirls/myvenv/Lib/site-packages/sklearn/datasets/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-640">
-          <caret line="686" column="4" selection-start-line="686" selection-start-column="4" selection-end-line="686" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML/csv_to_ds.py" />
-    <entry file="file://$PROJECT_DIR$/ML/output4.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="1001" selection-start-line="1001" selection-end-line="1001" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML/output5.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ML/output6.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -678,13 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="621" selection-start-line="621" selection-end-line="621" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ML/make_dummy_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -732,16 +650,6 @@
     <entry file="file://$USER_HOME$/Anaconda3/Lib/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plan_man_web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/djangogirls/myvenv/Lib/site-packages/django/utils/autoreload.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -753,13 +661,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/plan_man/templates/main.html" />
-    <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -799,13 +700,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ML/output1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="168">
@@ -827,13 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="377" column="4" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/plan_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -872,6 +766,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/djangogirls/myvenv/Lib/site-packages/sklearn/model_selection/_split.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="2083" column="14" lean-forward="true" selection-start-line="2083" selection-start-column="14" selection-end-line="2083" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/load_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -886,10 +797,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plan_man_web/settings.py">
+    <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/detail_user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="408">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -900,85 +811,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/djangogirls/myvenv/Lib/site-packages/sklearn/model_selection/_split.py">
+    <entry file="file://$PROJECT_DIR$/plan_man_web/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="2083" column="14" lean-forward="true" selection-start-line="2083" selection-start-column="14" selection-end-line="2083" selection-end-column="14" />
+        <state relative-caret-position="456">
+          <caret line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plan_man/views.py">
+    <entry file="file://$PROJECT_DIR$/plan_man_web/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plan_man_web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="441">
+          <caret line="19" selection-start-line="19" selection-end-line="20" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#636#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ML/load_model.py">
+    <entry file="file://$PROJECT_DIR$/plan_man_web/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="336">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plan_man/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/make_dummy_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ML/dataPreprocess.py" />
+    <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/read_plan_list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/plan_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plan_man/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2952">
+          <caret line="159" column="44" selection-start-line="159" selection-start-column="44" selection-end-line="159" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plan_man/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+        <state relative-caret-position="264">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plan_man/models.py">
+    <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plan_man/apis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1016">
-          <caret line="208" column="24" selection-start-line="208" selection-start-column="24" selection-end-line="208" selection-end-column="24" />
+        <state relative-caret-position="157">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#186#405#0" />
             <element signature="e#449#899#0" />
-            <element signature="e#945#1244#0" />
-            <element signature="e#1642#1970#0" />
-            <element signature="e#1640#2190#0" />
-            <element signature="e#2234#2994#0" />
-            <element signature="e#3043#3777#0" />
-            <element signature="e#3823#4243#0" />
-            <element signature="e#4289#4587#0" />
-            <element signature="e#4886#5094#0" />
-            <element signature="e#4633#5035#0" />
-            <element signature="e#5079#5661#0" />
-            <element signature="e#5710#6218#0" />
-            <element signature="e#6264#6702#0" />
-            <element signature="e#6748#7069#0" />
-            <element signature="e#7634#7856#0" />
-            <element signature="e#7410#7970#0" />
-            <element signature="e#8006#8259#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plan_man/templates/plan_man/detail_user.html">
+    <entry file="file://$PROJECT_DIR$/plan_man/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+        <state relative-caret-position="-240">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

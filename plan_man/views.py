@@ -12,7 +12,7 @@ def main(request):
     return HttpResponse(template.render({}, request))
 
 
-def plan_listt(request):
+def plan_list(request):
     p_list = Plan.objects.all()
     template = loader.get_template('plan_man/plan_list.html')
     context = {
@@ -53,6 +53,7 @@ def create_user(request):
 def select_user(request):
     template = loader.get_template('plan_man/select_user.html')
     return HttpResponse(template.render({}, request))
+
 
 def detail_user(request):
     template = loader.get_template('plan_man/detail_user.html')
@@ -139,6 +140,13 @@ def update_plan(request):
         'complete_day': data["complete_day"],
         'start_day': data["start_day"]
     }
+    return HttpResponse(template.render(context, request))
+
+
+def read_plan_list(request):
+    template = loader.get_template('plan_man/plan_list.html')
+    data = apis.bytes_to_dict(apis.plan_list_read(request))
+    context = {'user_id': data["user_id"]}
     return HttpResponse(template.render(context, request))
 
 

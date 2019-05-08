@@ -24,6 +24,7 @@ urlpatterns = [
     path('detail_plan/', views.detail_plan, name='detail_plan'),
     path('select_plan/', views.select_plan, name='select_plan'),
     path('update_plan/', views.update_plan, name='update_plan'),
+    path('read_plan_list/', views.read_plan_list, name='read_plan_list'),
 
     path('create_work/', views.create_work, name='create_work'),
     path('detail_work/', views.detail_work, name='detail_work'),
@@ -43,6 +44,7 @@ urlpatterns = [
     path('api/plan/update/', apis.plan_update, name='update_plan_api'),
     path('api/plan/delete/', apis.plan_delete, name='delete_plan_api'),
     path('api/plan/exist/', apis.plan_exist, name='exist_plan_api'),
+    path('api/plan/read_list/', apis.plan_list_read, name='read_plan_list_api'),
 
     path('api/work/create/', apis.work_create, name='create_work_api'),
     path('api/work/read/', apis.work_read, name='read_work_api'),

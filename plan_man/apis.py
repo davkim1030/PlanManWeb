@@ -98,16 +98,9 @@ def plan_read(request):
 def plan_list_read(request):
     data = json.loads(request_bytes_to_json(request))
     if request.method == 'POST' and User().is_exist(data['user_id']):
-        plan = Plan()
-        plan_data = plan.filter(data['user_id'])
-        return JsonResponse({"Result": True,
-                             "user_id": plan_data.user_id.user_id,
-                             "name": plan_data.name,
-                             "iteration_type": plan_data.iteration_type,
-                             "frequency": plan_data.frequency,
-                             "object_time": plan_data.object_time,
-                             "complete_day": plan_data.complete_day,
-                             "start_day": plan_data.start_day})
+        plan_data = list(Plan.objects.filter(user_id=data['user_id']).values())
+
+        return JsonResponse(plan_data, safe=False)
     return JsonResponse({"Result": False})
 
 
